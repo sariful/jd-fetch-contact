@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/libs/css/dataTables.min.css"> -->
+    <link rel="stylesheet" href="assets/libs/css/dataTables.bootstrap4.min.css">
+    <style>
+        body {
+            min-width: 48em;
+            min-height: 30em;
+
+            max-width: 30em;
+            max-height: 30em;
+
+            font-family: 'Montserrat';
+
+            overflow: auto;
+        }
+
+        table.table {
+            border-collapse: collapse !important;
+        }
+
+        table {
+            font-size: 0.83em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-2 mb-2">
+        <div class="row align-items-center">
+            <div class="col-md-10 page-title"></div>
+            <div class="col-md-2">
+                <button class="btn btn-secondary copy_table float-right" data-clipboard-target=".num_table">Copy</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="num_table table table-hover table-striped table-bordered"></table>
+    </div>
+    <script src="assets/libs/js/jquery.min.js"></script>
+    <script src="assets/libs/js/popper.min.js"></script>
+    <script src="assets/libs/js/bootstrap.min.js"></script>
+    <script src="assets/libs/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/libs/js/clipboard.min.js"></script>
+    <script src="assets/js/popup.js"></script>
+</body>
+
+</html>
